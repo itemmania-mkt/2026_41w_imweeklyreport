@@ -208,15 +208,15 @@
     <div class="kpi-grid">
       <div class="kpi-card up">
         <div class="kpi-label">조회수 (PV)</div>
-        <div class="kpi-value">28,109,228</div>
+        <div class="kpi-value">28,314,692</div>
         <div class="kpi-sub">전주: 27,518,534</div>
-        <span class="kpi-wow up">▲ 2.15%</span>
+        <span class="kpi-wow up">▲ 2.89%</span>
       </div>
       <div class="kpi-card down">
         <div class="kpi-label">총사용자 (UV)</div>
-        <div class="kpi-value">862,085</div>
+        <div class="kpi-value">862,301</div>
         <div class="kpi-sub">전주: 902,400</div>
-        <span class="kpi-wow down">▼ 4.47%</span>
+        <span class="kpi-wow down">▼ 4.44%</span>
       </div>
       <div class="kpi-card up">
         <div class="kpi-label">체류시간 (DT)</div>
@@ -238,9 +238,9 @@
       </div>
       <div class="kpi-card down">
         <div class="kpi-label">GSC CTR</div>
-        <div class="kpi-value">35.05%</div>
-        <div class="kpi-sub">전주: 36.19%</div>
-        <span class="kpi-wow down">▼ 3.17%</span>
+        <div class="kpi-value">35.68%</div>
+        <div class="kpi-sub">전주: 36.09%</div>
+        <span class="kpi-wow down">▼ 1.13%</span>
       </div>
       <div class="kpi-card down">
         <div class="kpi-label">거래건수</div>
@@ -304,8 +304,8 @@
     <div class="ga4-grid">
       <div class="ga4-card">
         <div class="ga4-label">총사용자</div>
-        <div class="ga4-value">862,085</div>
-        <span class="ga4-wow down">▼ 4.47%</span>
+        <div class="ga4-value">862,301</div>
+        <span class="ga4-wow down">▼ 4.44%</span>
       </div>
       <div class="ga4-card">
         <div class="ga4-label">활성화사용자</div>
@@ -319,8 +319,8 @@
       </div>
       <div class="ga4-card">
         <div class="ga4-label">조회수</div>
-        <div class="ga4-value">28,109,228</div>
-        <span class="ga4-wow up">▲ 2.15%</span>
+        <div class="ga4-value">28,314,692</div>
+        <span class="ga4-wow up">▲ 2.89%</span>
       </div>
       <div class="ga4-card">
         <div class="ga4-label">스크롤 진행율</div>
@@ -573,7 +573,7 @@
     </div>
   </div>
 </div>
-<div class="footer">2026년 41주차 아이템매니아 마케팅 코어 인덱스 &nbsp;|&nbsp; 기간: 2026.10.05 ~ 2026.10.11 &nbsp;|&nbsp; 생성일: 2026.10.13 &nbsp;|&nbsp; 2026-41w-1 기준 · Summary 3영역 &nbsp;|&nbsp; CONFIDENTIAL</div>
+<div class="footer">2026년 41주차 아이템매니아 마케팅 코어 인덱스 &nbsp;|&nbsp; 기간: 2026.10.05 ~ 2026.10.11 &nbsp;|&nbsp; 생성일: 2026.10.20 &nbsp;|&nbsp; 2026-41w-2 기준 · Summary 3영역 &nbsp;|&nbsp; CONFIDENTIAL</div>
 <script>
 Chart.defaults.font.family="'Pretendard',-apple-system,sans-serif";
 Chart.defaults.font.size=11;
@@ -592,19 +592,19 @@ new Chart(document.getElementById('trendChart'), {
 new Chart(document.getElementById('gscChart'), {
   type:'bar',
   data:{labels:["26년37주", "26년38주", "26년39주", "26년40주", "26년41주"],datasets:[
-    {label:'클릭수',data:[154834, 152648, 150483, 150314, 108926],backgroundColor:'rgba(0,86,179,.75)',borderRadius:4},
-    {label:'노출수',data:[472353, 446262, 429989, 416462, 310810],backgroundColor:'rgba(0,86,179,.2)',borderRadius:4}
+    {label:'클릭수',data:[154834, 152648, 150483, 150314, 154796],backgroundColor:'rgba(0,86,179,.75)',borderRadius:4},
+    {label:'노출수',data:[472353, 446262, 429989, 416462, 433801],backgroundColor:'rgba(0,86,179,.2)',borderRadius:4}
   ]},
   options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{position:'top',labels:{usePointStyle:true}}},scales:{x:{grid:{display:false}},y:{grid:{color:'rgba(0,0,0,.04)'}}}}
 });
 new Chart(document.getElementById('ctrChart'), {
   type:'line',
-  data:{labels:weeks,datasets:[{label:'GSC CTR(%)',data:[33.82, 34.61, 32.99, 31.08, 30.85, 31.39, 31.48, 32.78, 34.21, 35.0, 36.09, 35.05],borderColor:'#E74C3C',backgroundColor:'rgba(231,76,60,.08)',borderWidth:2.5,pointBackgroundColor:'#E74C3C',pointRadius:4,tension:.4,fill:true}]},
+  data:{labels:weeks,datasets:[{label:'GSC CTR(%)',data:[33.82, 34.61, 32.99, 31.08, 30.85, 31.39, 31.48, 32.78, 34.21, 35.0, 36.09, 35.68],borderColor:'#E74C3C',backgroundColor:'rgba(231,76,60,.08)',borderWidth:2.5,pointBackgroundColor:'#E74C3C',pointRadius:4,tension:.4,fill:true}]},
   options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false}},scales:{x:{grid:{color:'rgba(0,0,0,.04)'},ticks:{maxRotation:30}},y:{grid:{color:'rgba(0,0,0,.04)'},ticks:{callback:function(v){return v+'%';}}}}}
 });
 new Chart(document.getElementById('ageChart'), {
   type:'doughnut',
-  data:{labels:["18-24", "25-34", "35-44", "45-54", "55-64", "65+"],datasets:[{data:[33.78, 36.96, 14.76, 9.26, 4.41, 0.84],backgroundColor:['#0056B3','#2980B9','#27AE60','#F39C12','#E74C3C','#9B59B6'],borderWidth:2,borderColor:'#fff'}]},
+  data:{labels:["18-24", "25-34", "35-44", "45-54", "55-64", "65+"],datasets:[{data:[33.83, 36.93, 14.69, 9.28, 4.43, 0.85],backgroundColor:['#0056B3','#2980B9','#27AE60','#F39C12','#E74C3C','#9B59B6'],borderWidth:2,borderColor:'#fff'}]},
   options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{position:'right',labels:{padding:10,usePointStyle:true,font:{size:10}}},tooltip:{callbacks:{label:function(ctx){return ctx.label+': '+ctx.parsed+'%';}}}}}
 });
 new Chart(document.getElementById('convChart'), {
@@ -622,6 +622,6 @@ new Chart(document.getElementById('regTypeChart'), {
   options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{position:'right',labels:{padding:10,usePointStyle:true,font:{size:10}}},tooltip:{callbacks:{label:function(ctx){return ctx.label+': '+ctx.parsed.toLocaleString()+'건 ('+((ctx.parsed/113120*100).toFixed(1))+'%)';}}}}}
 });
 </script>
-<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/v4bc70e2c01a94c73b74392e4234840661791215815920" integrity="sha512-L0ha0OXavK/8okipN9F8BtP84dg9DUhPERbBXzwI6dgTA55d2+yweo3pn5CSFYs45/r8md2+xvUPtTdvTNRfjA==" data-cf-beacon='{"version":"2024.11.0","token":"4edd5f8ec12a48cfa682ab8261b80a79","spa":2}' crossorigin="anonymous"></script>
+<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092" integrity="sha512-UKNk8GbxkABxKcXYuLkO16EleLGUkcvJWtpSNmExE0Too3ZaFAxTscNWEc1OdAv5/BikHawapSCaiD2XCmp+Bw==" data-cf-beacon='{"version":"2024.11.0","token":"4edd5f8ec12a48cfa682ab8261b80a79","spa":2}' crossorigin="anonymous"></script>
 </body>
 </html>
